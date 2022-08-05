@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void mhm(float lira);
+int main() {
+	float n;
+	printf ("How many dolars do you want to know ");
+	scanf("%f",&n);
+	mhm(1);
+	mhm(2);
+    mhm(43);
+	mhm(n);
+
+	return 0;
+}
+void mhm(float lira){
+	
+float  dollar =lira*5.5;
+	
+	printf(" %.2fdollar = %.2flira  \n",lira,dollar);
+	
+}
+
+

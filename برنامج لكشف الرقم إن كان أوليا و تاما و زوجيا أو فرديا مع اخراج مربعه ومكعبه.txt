@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+
+
+int  a,b,c,x;
+
+printf("entr any number for have it ^2 and ^3\n");
+scanf ("%d",&x);
+
+
+
+printf("^1 %d.^2 %d.^3 %d\n",x,x*x,x*x*x);
+
+if (x%2==0) printf("%d is event \n",x);
+else printf("%d is ferdi  \n",x);
+
+for(a=1;a<x;a++){
+
+	if(x%a==0) b++;
+	c=c+a;
+}
+if (b==2) printf ("%d this number is prim\n",x);
+else printf ("%d this number is not prim\n",x);
+  if (c==x) printf ("%d this number is tam\n",x);
+  else printf ("%d this number is not tam\n",x);
+	return 0;
+}

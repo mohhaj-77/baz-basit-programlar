@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+struct mb_1
+{
+
+int h;
+int m;
+int s;
+
+}struct mb_1;
+
+
+int main() {
+	
+	mb_1.h;
+	mb_1.m;
+	mb_1.s;
+	
+	
+scanf("%d",&mb_1.h);
+scanf("%d",&mb_1.m);
+scanf("%d",&mb_1.s);
+
+printf(" the hour is  %d:%d:%d",mb_1.h,mb_1.m,mb_1.s);
+
+	return 0;
+}
