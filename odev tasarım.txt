@@ -1,0 +1,115 @@
+//180 290 608 Mohammad Hajjar    java
+
+
+
+package javaapplication2;
+
+import java.util.Scanner;
+
+interface KasaliAraclar {
+    public void metrekaresini();
+}
+
+class Karavan extends Tasit implements KasaliAraclar{
+
+    @Override
+    public void metrekaresini(){
+        System.out.println("....");
+    }
+       
+    
+    @Override
+    public void Calistir(){
+System.out.println( "araba adi"+ getad());
+System.out.println( "araba yil"+ getyil());
+System.out.println( "araba tur"+ gettur());
+}
+    
+}
+
+
+
+      class  Motosiklet  extends Tasit{
+@Override
+public void Calistir(){
+System.out.println( "araba adi"+ getad());
+System.out.println( "araba yil"+ getyil());
+System.out.println( "araba tur"+ gettur());
+}
+}
+
+
+
+
+class  BinekOto  extends Tasit{
+@Override
+public void Calistir(){
+System.out.println( "araba adi"+ getad());
+System.out.println( "araba yil"+ getyil());
+System.out.println( "araba tur"+ gettur());
+}
+
+
+
+
+
+
+    abstract class Tasit{ 
+       
+    
+       
+        public  abstract void Calistir();
+       
+       private String ad;
+        private String tur;
+       private int yil;
+       
+       public void setyıl(int yil){
+             
+             this.yil=yil;
+            
+        }
+         public void settur(String tur){
+             this.tur=tur;
+         }
+             
+           public void setad(String ad){
+            this.ad=ad;
+        }
+           
+         public int getyil(){
+
+         return yil;        }
+         
+            public String gettur(){
+       return tur;
+         }    
+            
+            public String getad(){
+                return ad;
+         }
+         
+         }
+    
+   
+        
+   
+
+
+
+
+public class JavaApplication2 {
+
+         
+        
+     public static void main(String[] args) {
+
+         Scanner a=new Scanner(System.in);
+
+
+
+
+
+    }
+    
+}

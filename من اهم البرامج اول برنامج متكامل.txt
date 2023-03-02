@@ -1,0 +1,84 @@
+
+/* 1_ ÇßÊÈ ÈÑäÇãÌ áÅÏÎÇá ÑŞã ÇáØÇáÈ . ÇÓã ÇáØÇáÈ .æãÚÏá
+    ÇáØÇáÈ æĞáß áÚÔÑÉ ØáÇÈ . ÍíË íŞæã ÇáÈÑäÇãÌ ÈØÈÇÚÉ åĞå ÇáãÚáæãÇÊ
+            ÈÇáÊÑÊíÈ ÇáÊÕÇÚÏí ÇÚÊãÇÏÇğ Úáì ÑŞã ÇáØÇáÈ. æØÈÇÚÊåÇ ãÑÉ ÃÎÑì ÈÇáÊÑÊíÈ
+                    ÇáÊäÇÒáí ÇÚÊãÇÏÇğ Úáì ãÚÏá ÇáØÇáÈ
+*/
+
+
+package javaapplication11;
+
+import java.util.Scanner;
+
+public class JavaApplication11 {
+   
+    public static void main(String[] args) {
+        
+  Scanner a =new Scanner(System.in);
+  
+        int nots[]= new int[10];
+        String names[]=new String[10];
+        String sevi[]=new String[10];
+        
+    int not=0;
+  String sev ;
+  String abc ;
+  
+        System.out.println("Enter 10 names whith their nots");
+        
+  for(int i=0;i<10;i++){
+      names[i]=a.next ();
+    nots[i] =a.nextInt();   
+  }
+  
+  
+   //ÇáÇä ãÑÍáÉ ÇÙåÇÑ ÇáÃÚÏÇÏ ÈÇáÊÑÊíÈ ÇáÊÕÇÚÏí
+    for(int s=0;s<10;s++){
+      for(int d=0;d<10;d++){
+       
+          if(nots[d]>nots[s]){
+           int y =nots[s];
+          nots[s]=nots[d];
+         nots[d]=y; 
+         
+          abc =names[s];
+         names[s]= names[d];
+         names[d]=abc;
+          }
+      }
+    }
+  
+  
+  
+    for(int j=0;j<10;j++){
+
+    if (nots[j] <= 100 && nots[j] > 85 ) {
+        sevi[j]="AA";
+      } 
+    else if(nots[j]>70 && nots[j]<85){
+        sevi[j]="BB";
+    }
+  else if(nots[j]>50 && nots[j]<70){
+          sevi[j]="CC";
+    }
+   else if(nots[j]==50){
+    sevi[j]="DD";
+        
+    }
+    else {
+     sevi[j]="FF";
+    }
+    }
+    
+   
+    for(int n=0;n<10;n++){
+        System.out.println(names[n]+"   "+nots[n]+sevi[n]);
+    }
+    
+  
+      
+    
+    
+}
+
+}
